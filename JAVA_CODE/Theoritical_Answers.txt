@@ -1,0 +1,8 @@
+1 How will you tackle the challenge above?
+To handle the task of reading and evaluating formulas from a CSV file, I would approach it by using a BufferedReader to read the data efficiently, line by line. Then, using regular expressions (Regex), I'd identify the cells containing formulas. For those cells, I’d evaluate the formulas by fetching the necessary values from the respective cells. This ensures that any dependencies between cells are handled correctly before writing the final results back into a new CSV file.
+
+2 What type of errors would you check for?
+There are a few common errors I’d keep an eye on. First, file handling errors, like if the file doesn't exist or can't be accessed. I’d also check for invalid formulas using Regex, ensuring that each formula is correctly formatted. Another potential issue is data type mismatches, where non-numeric values may cause calculation problems. Lastly, I’d watch for dependency issues, like missing or incorrect references to other cells that the formulas depend on.
+
+3 How might a user break your code?
+A user could break the code in several ways. They might input invalid formulas that don't follow the expected pattern, like using incorrect operators or references. Circular references, where one cell refers back to itself indirectly, could also cause the program to fail or loop infinitely. Additionally, inserting unexpected data types (like text in a cell meant for numbers) or using references to cells that don’t exist in the sheet could also break the calculations.
