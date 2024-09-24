@@ -19,7 +19,7 @@ This assignment provides a simple API that allows you to:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Aryan-2004-11/assigment
+   git clone https://github.com/Aryan-2004-11/assigment.git
    cd your-repository
 2. **install dependencies**
    ```bash
