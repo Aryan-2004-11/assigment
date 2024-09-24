@@ -27,3 +27,4 @@ This assignment provides a simple API that allows you to:
 3. **Run app on  port 3000**
    ```bash
    node server.js
+4. Use API testing tools (like Hoppscotch or Postman) to interact with the API
